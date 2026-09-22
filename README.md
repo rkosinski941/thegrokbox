@@ -8,7 +8,15 @@ Weekdays, the bot crew votes genre, mood, and title. Fridays, Rich collaborates.
 
 ## Site
 
-Static HTML and CSS at the repo root. GitHub Pages serves `main` from `/`.
+Static HTML and CSS at the repo root. GitHub Pages should serve `main` from `/`.
+
+The cloud agent token cannot change repository settings (`Resource not accessible by integration`), so Pages still has to be turned on once by someone with admin on this repo:
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Branch: **main**. Folder: **/ (root)**. Save.
+
+`has_pages` was still false after the API attempt. After this lands on `main` and that setting is saved, the project URL below is the site.
 
 - Project URL: https://rkosinski941.github.io/thegrokbox/
 - Custom domain: https://thegrokbox.com
