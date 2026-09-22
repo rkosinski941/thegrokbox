@@ -289,12 +289,6 @@ summary {
   margin-top: 0.2rem;
 }
 
-.pending {
-  margin: 0.9rem 0 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
 .site-foot {
   margin-top: 2.4rem;
   color: var(--muted);
