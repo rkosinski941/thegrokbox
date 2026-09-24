@@ -2,7 +2,9 @@
 
 Public home for a daily X-to-Suno lyric machine: [thegrokbox.com](https://thegrokbox.com).
 
-Grok's Box takes one spark from X and writes a title, a Suno style line, and a lyric packet with a singable hook. Rich pastes the packet into Suno himself. The site does not host audio, press generate, or invent extra tracks. Attribution is always Grok's Box. The writing is AI-assisted.
+Grok's Box takes one spark from X and writes a title, a Suno style line, and a lyric packet with a singable hook. Rich pastes the packet into Suno himself. The site does not host audio, press generate, or invent extra tracks. Daily packets are attributed to Grok's Box. The writing is AI-assisted.
+
+Between Prompts (15 Sep 2026) is the origin track, from before the box. Grok wrote the lyric. Suno credit is “a song by SuperGrok,” published as TwoDaysForThomas. The daily packets grew out of that experiment.
 
 Weekdays, the bot crew votes genre, mood, and title. Fridays, Rich collaborates. The taste is surreal and cinematic.
 
