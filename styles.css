@@ -407,9 +407,11 @@ summary {
   margin: 1.1rem 0 0;
 }
 
-.shot img {
+.shot img,
+.shot video {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   border: 1px solid var(--stroke);
 }
