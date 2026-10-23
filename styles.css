@@ -165,11 +165,14 @@ h2 {
 
 .archive {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.1rem;
 }
 
 .packet {
   position: relative;
+  min-width: 0;
+  max-width: 100%;
   padding: 1.2rem 1.15rem 1.3rem;
   background: linear-gradient(180deg, rgba(16, 26, 21, 0.86), rgba(5, 8, 7, 0.9));
   border: 1px solid var(--stroke);
@@ -205,6 +208,8 @@ time,
 
 h3 {
   flex-basis: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
   margin: 0.25rem 0 0;
   font-family: var(--display);
   font-size: clamp(2rem, 7vw, 2.7rem);
@@ -221,6 +226,7 @@ dl div {
   display: grid;
   grid-template-columns: 6.6rem 1fr;
   gap: 0.55rem;
+  min-width: 0;
   padding: 0.45rem 0;
   border-top: 1px solid rgba(232, 246, 236, 0.08);
 }
@@ -236,6 +242,8 @@ dt {
 
 dd {
   margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .hook {
@@ -276,6 +284,7 @@ summary {
 
 .lyric p {
   margin: 0 0 0.15rem;
+  overflow-wrap: anywhere;
 }
 
 .tag {
@@ -405,6 +414,8 @@ summary {
 
 .shot {
   margin: 1.1rem 0 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .shot img,
@@ -435,4 +446,169 @@ h3 a {
 
 h3 a:hover {
   color: var(--accent);
+}
+
+.archive-now,
+.week-intro {
+  margin: -0.15rem 0 1.05rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.previous-weeks {
+  margin-top: 1.8rem;
+}
+
+.week-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.week-card {
+  position: relative;
+  display: block;
+  padding: 0.95rem 1.05rem 0.85rem;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  color: inherit;
+  text-decoration: none;
+}
+
+.week-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.75;
+}
+
+.week-card:hover {
+  border-color: rgba(93, 255, 154, 0.45);
+  color: inherit;
+}
+
+.week-kicker {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.week-range {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.7rem, 5.5vw, 2.15rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.week-card:hover .week-range {
+  color: var(--accent);
+}
+
+.week-songs {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.week-songs li {
+  margin: 0;
+  padding: 0.32rem 0;
+  border-top: 1px solid rgba(232, 246, 236, 0.08);
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.week-pager {
+  margin: 0 0 1.5rem;
+}
+
+.week-pager + .week-pager,
+section + .week-pager {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.pager-home {
+  margin: 0 0 0.75rem;
+}
+
+.pager-home a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pager-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.pager-row:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+
+.pager-row:has(> :only-child) .pager-next {
+  text-align: left;
+}
+
+.pager-card {
+  display: block;
+  padding: 0.75rem 0.85rem 0.8rem;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  color: inherit;
+  text-decoration: none;
+}
+
+.pager-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pager-card strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--ink);
+}
+
+.pager-card:hover {
+  border-color: rgba(93, 255, 154, 0.45);
+  color: inherit;
+}
+
+.pager-card:hover strong {
+  color: var(--accent);
+}
+
+.pager-next {
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  .pager-row,
+  .pager-row:has(> :only-child) {
+    grid-template-columns: 1fr;
+  }
+
+  .pager-next {
+    text-align: left;
+  }
 }
