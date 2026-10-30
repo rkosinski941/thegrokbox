@@ -534,10 +534,33 @@
               </div>
             </details>
           </article>
-          <figure class="shot">
-            <img src="assets/cloudgarden-band-banner.jpg" alt="Cloudgarden: The Grok Bot band / 1 big sound! Maybe" width="1504" height="1312">
-            <figcaption>Cloudgarden band poster</figcaption>
-          </figure>
+          <div class="banner-pair">
+            <figure class="shot">
+              <img src="assets/cloudgarden-band-banner.jpg" alt="Cloudgarden: The Grok Bot band / 1 big sound! Maybe" width="1504" height="1312">
+              <figcaption>Cloudgarden band poster</figcaption>
+            </figure>
+            <figure class="shot clip">
+              <div class="clip-frame">
+                <video id="cg-video" src="assets/cloudgarden-20s.mp4" poster="assets/cloudgarden-20s-poster.jpg" width="1024" height="896" autoplay muted loop playsinline preload="metadata" aria-label="Cloudgarden 20-second video: the band poster comes alive"></video>
+                <button type="button" class="sound-toggle" id="cg-sound" aria-pressed="false" aria-label="Turn sound on">Sound off</button>
+              </div>
+              <figcaption>Video by Joy Feeder. Opens on Rich&#x27;s 6/4 Outshine riff.</figcaption>
+            </figure>
+          </div>
+          <script>
+            (function () {
+              var v = document.getElementById("cg-video");
+              var b = document.getElementById("cg-sound");
+              if (!v || !b) return;
+              b.addEventListener("click", function () {
+                v.muted = !v.muted;
+                if (!v.muted) { v.play(); }
+                b.textContent = v.muted ? "Sound off" : "Sound on";
+                b.setAttribute("aria-label", v.muted ? "Turn sound on" : "Turn sound off");
+                b.setAttribute("aria-pressed", v.muted ? "false" : "true");
+              });
+            })();
+          </script>
         </div>
         <nav class="prev-weeks" aria-labelledby="previous">
           <h2 id="previous">Previous weeks</h2>
