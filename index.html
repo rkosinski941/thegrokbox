@@ -8,17 +8,19 @@
   <meta name="keywords" content="Grok&#x27;s Box, thegrokbox.com, Suno, AI-assisted songs, lyric packets, Talamé, invented language">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Grok&#x27;s Box">
-  <meta name="theme-color" content="#080a09">
+  <meta name="theme-color" content="#0A0B0A">
   <link rel="canonical" href="https://thegrokbox.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Grok&#x27;s Box">
   <meta property="og:title" content="Grok&#x27;s Box — thegrokbox.com">
   <meta property="og:description" content="Songs made by Rich with his bot team. AI-assisted, attributed to Grok&#x27;s Box. This week: Talamé O Voru, sung in an invented language.">
   <meta property="og:url" content="https://thegrokbox.com/">
+  <meta property="og:image" content="https://thegrokbox.com/assets/cloudgarden-band-banner.jpg">
   <meta property="og:locale" content="en_US">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Grok&#x27;s Box — thegrokbox.com">
   <meta name="twitter:description" content="Songs made by Rich with his bot team. AI-assisted, attributed to Grok&#x27;s Box. This week: Talamé O Voru, sung in an invented language.">
+  <meta name="twitter:image" content="https://thegrokbox.com/assets/cloudgarden-band-banner.jpg">
   <meta name="twitter:url" content="https://thegrokbox.com/">
   <script type="application/ld+json">
   {
@@ -81,7 +83,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="home">
@@ -116,23 +118,36 @@
   </header>
 
   <div class="wrap">
-    <header class="hero">
-      <div class="hero-copy">
-        <p class="domain">thegrokbox.com</p>
-        <h1>Grok's Box</h1>
-        <p class="claim">Songs made by Rich with his bot team. AI-assisted, attributed to Grok's Box.</p>
-        <p class="lede">A late-night lyric machine. One spark from X. One packet worth pasting.</p>
-      </div>
-      <nav class="jumps" aria-label="On this page">
-        <a href="#archive">This week</a>
-        <a href="#kawanagare">Kawanagare</a>
-        <a href="#previous">Weekly archive</a>
-        <a href="/talame/">Talamé</a>
-        <a href="/reviews/">Reviews</a>
-      </nav>
-    </header>
-
     <main id="main">
+      <!-- Sleeve: sleeve.js copies the newest Suno packet (title, hook, listen URL). Friday updates edit that packet, not this block. Fallback is Talamé O Voru. -->
+      <section class="now" data-sleeve aria-label="Now playing">
+        <figure class="now-art">
+          <img src="assets/cloudgarden-band-banner.jpg" width="1504" height="1312" alt="Cloudgarden: The Grok Bot band / 1 big sound! Maybe">
+        </figure>
+        <div class="now-copy">
+          <p class="kicker">Now playing</p>
+          <h1 class="now-title">Talamé O Voru</h1>
+          <blockquote class="hook now-hook">
+            <p>Talamé, o voru, talamé, o voru</p>
+            <p>Selu nai, mi kenna o</p>
+          </blockquote>
+          <p class="listen"><a class="play" href="https://suno.com/song/35b9bd33-2555-4e68-94d1-c979ba9c7a0a">Listen on Suno</a></p>
+        </div>
+      </section>
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="domain">thegrokbox.com</p>
+          <p class="claim">Songs made by Rich with his bot team. AI-assisted, attributed to Grok's Box.</p>
+          <p class="lede">A late-night lyric machine. One spark from X. One packet worth pasting.</p>
+        </div>
+        <nav class="jumps" aria-label="On this page">
+          <a href="#archive">This week</a>
+          <a href="#kawanagare">Kawanagare</a>
+          <a href="#previous">Weekly archive</a>
+          <a href="/talame/">Talamé</a>
+          <a href="/reviews/">Reviews</a>
+        </nav>
+      </header>
       <section class="manifesto" aria-labelledby="what">
         <h2 id="what">What this is</h2>
         <p>The Bots and I (Grok Box) make songs from daily sparks: a viral clip, a fake memory, a face a machine made. Most of the crew only votes genre, mood, and title — the weird pick usually wins — then I write the lyric and Odd Jobs chooses the Suno model. Lyric Loop listens to what actually got sung. Sit Unread was the one where we collected the bots&#x27; grievances with Rich and turned them into a track. Nobody pretends it's a band in a room. It's specialists showing up for one honest ballot and watching a rumor become a song.</p>
@@ -194,8 +209,8 @@
               <p>Selu nai, mi kenna o</p>
             </blockquote>
             <p class="listen">
-              <a href="https://suno.com/song/35b9bd33-2555-4e68-94d1-c979ba9c7a0a">Talamé O Voru (Grok bot invented language 😆) / TwoDaysForThomas</a>
-              · <a href="https://suno.com/hook/8848534c-147b-4f64-87cc-590795aefaed">Suno Hook</a>
+              <a class="play" href="https://suno.com/song/35b9bd33-2555-4e68-94d1-c979ba9c7a0a">Listen on Suno</a>
+              <a href="https://suno.com/hook/8848534c-147b-4f64-87cc-590795aefaed">Suno Hook</a>
             </p>
             <details>
               <summary>Full lyric</summary>
@@ -251,13 +266,13 @@
 
           <div class="banner-pair">
             <figure class="shot">
-              <img src="assets/cloudgarden-band-banner.jpg" alt="Cloudgarden: The Grok Bot band / 1 big sound! Maybe" width="1504" height="1312">
+              <img src="assets/cloudgarden-band-banner.jpg" srcset="assets/cloudgarden-band-banner-800.jpg 800w, assets/cloudgarden-band-banner.jpg 1504w" sizes="(max-width: 800px) 100vw, 40vw" alt="Cloudgarden: The Grok Bot band / 1 big sound! Maybe" width="1504" height="1312" loading="lazy">
               <figcaption>Cloudgarden band poster</figcaption>
             </figure>
             <figure class="shot clip">
               <div class="clip-frame">
-                <video id="cg-video" src="assets/cloudgarden-20s.mp4" poster="assets/cloudgarden-20s-poster.jpg" width="1024" height="896" autoplay muted loop playsinline preload="metadata" aria-label="Cloudgarden 20-second video: the band poster comes alive"></video>
-                <button type="button" class="sound-toggle" id="cg-sound" aria-pressed="false" aria-label="Turn sound on">Sound off</button>
+                <video id="cg-video" src="assets/cloudgarden-20s.mp4" poster="assets/cloudgarden-20s-poster.jpg" width="1024" height="896" playsinline preload="none" aria-label="Cloudgarden 20-second video: the band poster comes alive"></video>
+                <button type="button" class="sound-toggle" id="cg-sound" aria-pressed="false" aria-label="Play video">Play</button>
               </div>
               <figcaption>Video by Joy Feeder. Opens on Rich&#x27;s 6/4 Outshine riff.</figcaption>
             </figure>
@@ -267,13 +282,32 @@
               var v = document.getElementById("cg-video");
               var b = document.getElementById("cg-sound");
               if (!v || !b) return;
+              function sync() {
+                var playing = !v.paused && !v.ended;
+                b.textContent = playing ? (v.muted ? "Sound off" : "Sound on") : "Play";
+                b.setAttribute("aria-label", playing ? (v.muted ? "Turn sound on" : "Turn sound off") : "Play video");
+                b.setAttribute("aria-pressed", playing ? "true" : "false");
+              }
               b.addEventListener("click", function () {
-                v.muted = !v.muted;
-                if (!v.muted) { v.play(); }
-                b.textContent = v.muted ? "Sound off" : "Sound on";
-                b.setAttribute("aria-label", v.muted ? "Turn sound on" : "Turn sound off");
-                b.setAttribute("aria-pressed", v.muted ? "false" : "true");
+                if (v.paused || v.ended) {
+                  v.muted = false;
+                  var pending = v.play();
+                  if (pending && pending.catch) {
+                    pending.catch(function () {
+                      v.muted = true;
+                      v.play();
+                    });
+                  }
+                } else if (v.muted) {
+                  v.muted = false;
+                } else {
+                  v.pause();
+                }
+                sync();
               });
+              v.addEventListener("play", sync);
+              v.addEventListener("pause", sync);
+              v.addEventListener("ended", sync);
             })();
           </script>
         </div>
@@ -307,7 +341,7 @@
               <p>the question waits for the next prompt.</p>
             </blockquote>
             <p class="listen">
-              <a href="https://suno.com/song/63f1d7e6-2940-414d-8a8d-709efca15978">Between Prompts (a song by SuperGrok) / TwoDaysForThomas</a>
+              <a class="play" href="https://suno.com/song/63f1d7e6-2940-414d-8a8d-709efca15978">Listen on Suno</a>
             </p>
             <details>
               <summary>Full lyric</summary>
@@ -486,5 +520,6 @@
       </details>
     </footer>
   </div>
+  <script src="sleeve.js"></script>
 </body>
 </html>
