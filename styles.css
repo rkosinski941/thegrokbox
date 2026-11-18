@@ -754,6 +754,26 @@ summary {
   line-height: 0.98;
 }
 
+.review .original {
+  margin: 2.15rem 0 1.2rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--stroke);
+}
+
+@media (min-width: 761px) {
+  .review dl div {
+    grid-template-columns: minmax(0, 8.75rem) minmax(0, 1fr);
+  }
+}
+
+.review .manifesto li {
+  overflow-wrap: break-word;
+}
+
+.review .manifesto li + li {
+  margin-top: 0.75rem;
+}
+
 .byline {
   margin: 0.85rem 0 0;
   color: var(--muted);
