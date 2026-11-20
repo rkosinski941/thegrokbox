@@ -9,7 +9,7 @@
     if (!link) return;
     var time = packet.querySelector("time");
     var stamp = time ? (time.getAttribute("datetime") || "") : "";
-    if (!best || stamp >= bestTime) {
+    if (!best || stamp > bestTime) {
       best = packet;
       bestTime = stamp;
     }
